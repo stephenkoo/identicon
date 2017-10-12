@@ -10,5 +10,5 @@ defmodule Identicon.Image do
     %Identicon.Image{hex: []}
 
   """
-  defstruct hex: nil
+  defstruct hex: nil, color: nil
 end
