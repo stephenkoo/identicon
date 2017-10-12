@@ -1,6 +1,7 @@
 # Identicon
 
-**TODO: Add description**
+Generate [identicon](https://en.wikipedia.org/wiki/Identicon) based on string.
+Built with Elixir.
 
 ## Installation
 
