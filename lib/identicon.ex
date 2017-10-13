@@ -21,4 +21,18 @@ defmodule Identicon do
     hex
     |> Enum.chunk(3)
   end
+
+  @doc """
+  Completes each row of identicon pixels by reflecting the values of the first half
+
+  ## Examples
+
+      iex> Identicon.mirror_row([145, 46, 200])
+      [145, 46, 200, 46, 145]
+
+  """
+  def mirror_row(row) do
+    [first, second | _tail] = row
+    row ++ [second, first]
+  end
 end
