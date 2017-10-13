@@ -5,10 +5,10 @@ defmodule Identicon.Image do
   ## Examples
 
     iex> %Identicon.Image{}
-    %Identicon.Image{hex: nil}
-    iex> %Identicon.Image{[]}
-    %Identicon.Image{hex: []}
+    %Identicon.Image{hex: nil, color: nil, grid: nil}
+    iex> %Identicon.Image{hex: []}
+    %Identicon.Image{hex: [], color: nil, grid: nil}
 
   """
-  defstruct hex: nil, color: nil
+  defstruct hex: nil, color: nil, grid: nil
 end
